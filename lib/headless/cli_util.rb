@@ -51,7 +51,7 @@ class Headless
         rescue Errno::ESRCH
           # no such process; assume it's already killed
         rescue Errno::ECHILD
-          puts "no child processes; assume it's already killed"
+          # no such child process; assume it's already killed
         end
       end
       
